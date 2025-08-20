@@ -47,7 +47,7 @@ str_num = str(num1)
 print(f"Your decimal number,{num1} as integer is {int_num} and {str_num} for string.")
 
 """
-
+"""
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 
@@ -58,3 +58,43 @@ int_div = int(num1/num2)
 int_rem = int(num1%num2)
 
 print(f"Your numbers as int in various arithmetic operations \n add:{int_sum}, dif: {int_dif},prod: {int_prod},div: {int_div}, rem:{int_rem}")
+"""
+"""
+num = int(input("Enter a number to check if it's odd or even: "))
+
+if num % 2 == 0:
+    print("Number is even.")
+else:
+    print("Number is Odd.")    """
+
+
+"""
+print("Please enter your exam scores(0-100): ")
+exam1 = int(input("Exam 1 score: "))
+exam2 = int(input("Exam 2 score: "))
+exam3 = int(input("Exam 3 score: "))
+
+avg_score = round((exam1+exam2+exam3)/3)
+
+
+if avg_score<70:
+    print("F")
+elif avg_score <= 89 and avg_score >= 80:
+        print("B")
+elif avg_score <= 79 and avg_score >=70:
+        print("C") 
+else: 
+    print("A")
+"""
+
+num = int(input("Enter a number: "))
+
+if num%3 == 0 and num%5 ==0:
+    print("FizzBuzz")
+elif num%3 ==0:
+    print("Fizz")
+elif num%5 ==0:
+    print("Buzz")
+else:
+        print("Number is not divisible by both 3 and 5.")
+
