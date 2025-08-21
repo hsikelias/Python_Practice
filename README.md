@@ -1,3 +1,3 @@
 Small exercises to really brush up my python fundamentals 
 
-yep thats about it
+yep thats about it.
