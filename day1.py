@@ -136,7 +136,7 @@ else:
     print(f"Your income is {income} and your tax is {tax}")
 """
 
-
+"""
 temp = int(input("What is the temperature: "))
 
 if temp >= 35:
@@ -169,8 +169,25 @@ else:     # true, get in
             print("Mild")
         else: 
             if temp >= 5 and temp <=14: #true
-                print("Cool") #prints cool
-    print("Cold")        # always prints cool cus its outside the indent
+                print("Cool") 
+            else: 
+                print("Cold")   """ 
+
+"""
+age = int(input("What is your age?"))
 
 
-
+if age <3:
+    print("infant")
+elif age >=3 and age<=12:
+    print("Child")
+elif age >=13 and age<=17:
+    print("Teenager")
+elif age >=18 and age <=24:
+    print("Young Adult")
+elif age >=25 and age <=64:
+    print("Adult") 
+else:
+    print("Senior")  
+     
+"""            
