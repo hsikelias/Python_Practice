@@ -87,6 +87,8 @@ else:
     print("A")
 """
 
+
+"""
 num = int(input("Enter a number: "))
 
 if num%3 == 0 and num%5 ==0:
@@ -97,4 +99,78 @@ elif num%5 ==0:
     print("Buzz")
 else:
         print("Number is not divisible by both 3 and 5.")
+
+"""
+# Cool way to use else
+# Div by 4, leap year with expectations
+# year divisble by 100 = no leap year
+# divisble by both 4 and 100 = leap year
+"""
+year = int(input("Enter a year to check if its leap year or not: "))
+
+if year%400 == 0:
+    print("Leap")
+else:
+    if year%100 ==0:
+        print("Not leap year")
+    else:
+        if year %4 ==0:
+            print("Leap year")
+        else:
+            print("No leap year")
+            """
+
+"""
+income = int(input("What is your income: "))
+tax = 0
+if income < 10000:
+    tax = 0
+else:
+    if income >= 10000 and income <= 49999:
+        tax = 10 
+    else:
+        if income >=50000 and income <= 99999:
+            tax = 20
+        else:
+            tax = 30
+    print(f"Your income is {income} and your tax is {tax}")
+"""
+
+
+temp = int(input("What is the temperature: "))
+
+if temp >= 35:
+    print("Very hot")
+elif temp >= 30 and temp <=34:
+    print("Hot")
+elif temp >= 25 and temp <=29:
+    print("Warm")
+elif temp >= 15 and temp <=24:
+    print("Mild")
+elif temp >= 5 and temp <=14:
+    print("Cool")
+else: 
+    print("Cold")
+
+
+temp = int(input("What is the temperature: "))
+
+#assuming temp = 6
+
+if temp >= 35:    #false skip
+    print("Very hot")
+else:     # true, get in
+    if temp >= 30 and temp <=34: #false skip
+        print("Hot") 
+    else:
+        if temp >= 25 and temp <=29: #false skip
+            print("Warm")
+        elif temp >= 15 and temp <=24: #false skip
+            print("Mild")
+        else: 
+            if temp >= 5 and temp <=14: #true
+                print("Cool") #prints cool
+    print("Cold")        # always prints cool cus its outside the indent
+
+
 
