@@ -99,3 +99,37 @@ random.shuffle(passwordlist)
 final_password = "".join(str(item) for item in passwordlist)
 print(final_password)
 """
+
+"""
+def is_even():
+    return num%2 == 0
+
+repeat = True
+while repeat:
+    num= int(input("Enter a number:"))
+    print (is_even(num))
+    repeat = input("continue? y/n: ")
+    if repeat.lower() != 'y':
+        repeat= False
+"""
+"""
+def grade_score(avg_score):
+    if avg_score >= 90:
+        return("A")
+    elif avg_score >= 80:
+        return "B"
+    elif avg_score >= 70:
+        return "C"
+    elif avg_score >= 60:
+        return "D"
+    else:
+        return "F"
+
+exam1 = int(input("Enter exam1 grade: "))
+exam2 = int(input("Enter exam2 grade: "))
+exam3 = int(input("Enter exam3 grade: "))
+avg_score = (exam1 + exam2 + exam3)/3
+
+print(f"Your average score is {round(avg_score)} and grade is {(grade_score(avg_score))}")
+
+"""
