@@ -80,28 +80,40 @@ calculate_love_score(name1 = "Kanye West",name2 = "Kim Kardashian")
 
 alphabets = ["a","b","c","d","e","f","g","h", "i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
-direct = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-text = str(input("Enter the message:\n").lower())
-shift = int(input("Type the shift number:\n"))
-
-
 def ceaser(original_text, shift_amount, encode_or_decode):
     output_text = "" #h
+    if encode_or_decode == "decode":
+                shift_amount *= -1
+
     for char in original_text:
 
-        if encode_or_decode == "decode":
-            shift_amount *= -1
+        if char not in alphabets:
+            output_text += char
+        else:
+            
 
-        shifted_position = alphabets.index(char) + shift_amount #10 -> 8
-        shifted_position %= len(alphabets)
-        output_text += alphabets[shifted_position]
+            shifted_position = alphabets.index(char) + shift_amount #10 -> 8
+            shifted_position %= len(alphabets)
+            output_text += alphabets[shifted_position]
     
     print(f"Here is the {encode_or_decode}d result: {output_text}")
 
-ceaser(original_text=text, encode_or_decode=direct,shift_amount=shift)
 
+should_contniue = True
 
+while should_contniue: 
 
+    direct = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+    text = str(input("Enter the message:\n").lower())
+    shift = int(input("Type the shift number:\n"))
 
+    ceaser(original_text=text, encode_or_decode=direct,shift_amount=shift)
 
+    restart=input("Type 'yes'if you want to go again. Otherwise, type 'no'\n").lower()
 
+    if restart == "no":
+        should_contniue = False
+        print("Good bye king!")
+# _ _ _ _ _ _
+
+# 1 3 0 2 0 8
